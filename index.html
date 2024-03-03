@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          'sans': ['Red Hat Display', 'sans-serif']
+        }
+      }
+    }
+  </script>
+  
+</head>
+<body class="flex justify-center items-center h-screen bg-no-repeat bg-contain bg-indigo-100 px-5" background="./images/pattern-background-desktop.svg">
+  <div id="main" class="flex-col max-w-sm text-sm">
+    <img src="./images/illustration-hero.svg" alt="" class="rounded-t-xl">
+    <div id="container" class="flex flex-col gap-5 px-10 py-10 w-auto bg-white rounded-b-xl">
+      <h1 class="text-center text-2xl font-black text-blue-950">Order Summary</h1>
+      <p class="text-center text-slate-500 font-medium mt-0 leading-5">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+      <div id="plan" class="flex p-5 bg-indigo-50 rounded-xl justify-between items-center">
+        <div id="inner" class="flex gap-5 items-center">
+          <img src="./images/icon-music.svg" alt="">
+          <div id="details">
+            <p class="font-bold text-blue-950">Annual Plan</p>
+            <p class="text-slate-500 font-medium">$59.99/year</p>
+          </div>
+        </div>
+        <a href="#" onmouseover="this.style.textDecoration='none';" onmouseleave="this.style.textDecoration='underline';"  class="text-indigo-800 text-xs font-bold underline hover:text-indigo-500">Change</a>
+      </div>
+      <button class="bg-indigo-700 text-white py-3 rounded-lg text-center font-bold shadow-3xl hover:bg-indigo-400">Proceed to Payment</button>
+      <p class="text-center cursor-pointer font-bold text-slate-500 hover:text-blue-950">Cancel Order</p>
+    </div>
+  </div>
+</body>
+</html>
